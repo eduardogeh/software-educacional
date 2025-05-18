@@ -1,0 +1,17 @@
+[
+  {
+    "id": "pequena",
+    "nome": "Pequena",
+    "etapas": 3
+  },
+  {
+    "id": "media",
+    "nome": "Média",
+    "etapas": 5
+  },
+  {
+    "id": "grande",
+    "nome": "Grande",
+    "etapas": 7
+  }
+]

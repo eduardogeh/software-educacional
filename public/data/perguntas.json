@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "pergunta": "Qual é a primeira fase de um projeto?",
+    "alternativas": [
+      "Execução",
+      "Planejamento",
+      "Encerramento",
+      "Iniciação"
+    ],
+    "resposta": "Iniciação"
+  },
+  {
+    "id": 2,
+    "pergunta": "Qual documento define o escopo do projeto?",
+    "alternativas": [
+      "Termo de Abertura",
+      "EAP",
+      "Plano de Projeto",
+      "Cronograma"
+    ],
+    "resposta": "Termo de Abertura"
+  }
+]
