@@ -1,0 +1,14 @@
+[
+  {
+    "pergunta": "Qual a capital do Brasil?",
+    "opcoes": ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+    "respostaCorreta": 1,
+    "dica": "Foi inaugurada em 1960."
+  },
+  {
+    "pergunta": "Quanto é 2 + 2?",
+    "opcoes": ["3", "4", "5", "22"],
+    "respostaCorreta": 1,
+    "dica": "É o mesmo que 2 vezes 2."
+  }
+]

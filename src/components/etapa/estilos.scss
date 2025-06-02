@@ -1,41 +1,98 @@
 .etapa-container {
-  padding: 20px;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+
+  .cascata {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    height: 60px;
+
+    .linha {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background-color: #e0e0e0;
+      transform: translateY(-50%);
+      z-index: 0;
+      border-radius: 4px;
+    }
+
+    .etapa {
+      position: relative;
+      z-index: 1;
+      width: 40px;
+      height: 40px;
+      background-color: #ccc;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      transition: background 0.3s ease;
+
+      &.ativa {
+        background-color: #4caf50;
+        box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.3);
+      }
+
+      .numero {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .resultado-dado {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .btn {
+      background-color: #4caf50;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
 }
 
-.cascata {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 30px 0;
-  position: relative;
-  height: 200px;
-}
 
-.etapa {
-  height: 12px;
-  background: #ddd;
-  border-radius: 3px;
-  margin-bottom: 4px;
-  position: relative;
-  transition: background 0.3s ease;
-}
 
-.etapa.ativa {
-  background: #007BFF;
-}
-
-.marcador {
-  position: absolute;
-  left: -12px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
-  background: #007BFF;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
-}
